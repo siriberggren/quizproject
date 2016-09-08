@@ -26,7 +26,7 @@ Question {{ question_number }}
 
 <h1 class="moviequestion" class="animated infinite fadeIn">{{ question }}</h1>
 
-<p class="skip1">Don't want to spoil it?  <a href="link" class="skip2">Skip to the next question.</a></p>
+<p class="skip1">Don't want to spoil it?  <a href='{% url "results_page" quiz_number %}' class="skip2">Skip to the next question.</a></p>
 </div>
 <div class="container-fluid alternatives-answers">
   <div class="row answers">
@@ -74,8 +74,13 @@ Question {{ question_number }}
  			<button type="button" class="btn btn-primary btn-lg btn-block answer">The Green Mile</button>
   </div>
 </div>
-<br>
-<br>
-<br>
+
+<footer class="footer navbar-fixed-bottom">
+<div class="container">
+  <p><a href="https://www.linkedin.com/in/siriberggren?trk=nav_responsive_tab_profile_pic" class="sirilink">
+  © Siri Matsdotter Berggren</a> | <a href="https://www.instagram.com/tjejerkodar/" class="tklink"># 100TjejerKodar
+  </p></a>
+</div>
+</footer>
  </body>
 </html>
