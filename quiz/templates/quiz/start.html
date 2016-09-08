@@ -28,7 +28,7 @@
 <div class="pickmovie">
  <button type="button" 
  	class="btn btn-primary btn-lg btn-block movie-quiz"><p 
- 	class="movie-button-text">{{ quiz.name }}</p></button></div>
+ 	class="movie-button-text"><a href="{% url "quiz_page" quiz.quiz_number %}">{{ quiz.name }}</a></p></button></div>
 {% endfor %}
 
 <footer class="footer">
