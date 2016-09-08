@@ -11,10 +11,6 @@ quizzes = [
    	   	"name": "Största 1slagen",
 	   	"description": "Kan du dina lag?"
 	},
-	{
-		"quiz_number": 3,
-   	    	"name": "Världens mest kända hackare",
-	    	"description": "Hackerhistoria är viktigt, kan du den?"	},
 ]
 
 def start(request):
