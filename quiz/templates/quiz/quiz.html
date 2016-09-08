@@ -13,10 +13,8 @@
  </head>
 
  <body class="gradient">
-<h1>{{ quiz.name }}</h1>
-	<p>{{ quiz.description }}</p>
  <div class="container header">
- <h1 class="logo smaller">Spoiler Alert!</h1>
+ <h1 class="logo smaller">{{ quiz.name }}</h1>
 	</div>
 
  <div class="moviequizstart">
@@ -24,7 +22,7 @@
  <br>
  <br>
 
-<h1 class="moviequiz">Do you know your movies by their spoilers?</h1>
+<h1 class="moviequiz">{{ quiz.description }}</h1>
 	</div>
 
 <p class="disclaimer start">( Don't worry - you can easily skip spoilers you don't want to know the answer to )</p>
