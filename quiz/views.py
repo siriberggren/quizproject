@@ -17,10 +17,8 @@ quizzes = [
 	    	"description": "Hackerhistoria är viktigt, kan du den?"	},
 ]
 
-
-# Create your views here.
 def start(request):
-		context = {
+	context = {
 		"quizzes": quizzes,
 	}
 	return render(request, "quiz/start.html", context)

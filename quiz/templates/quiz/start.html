@@ -13,6 +13,9 @@
  </head>
 
  <body class="gradient">
+ {% for quiz in quizzes %}
+	<p>{{ quiz.name }}</p>
+{% endfor %}
 
 <div class="container header">
  <h1 class="logo">Spoiler Alert!</h1>
