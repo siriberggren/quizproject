@@ -1,9 +1,11 @@
 body {
     background-image: gradient >.vertical(#4f264c, #FFFFFF);
     height: 100%;
-    margin: 0;
+    margin: ;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    text-align: center;
+    float: center;
 }
 
 .gradient {
@@ -45,31 +47,50 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 	padding-bottom: 0.5em;
 	font-size: 28pt;
 }
+.container-fluid.alternatives-quizzes {
+	border: none;
+	align-content: center;
+	background: none;
+}
 
-.btn.btn-primary.btn-lg.btn-block.movie-quiz {
+/*.row.quizzes {
+	margin: 0px;
+	background-color: yellow;
+	align-content: center;
+	width: 400px;
+	padding: 1em;
+}*/
+
+/*.col-md-12.center.block {
+	align-content: center;
+	text-align: center;
+}*/
+
+.btn.btn-primary.btn-lg.btn-block.quiz {
 	border: none;
 	width: 400px;
 	height: 100px;
-	margin: 15px;
-	position: center;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 0.3em;
+    padding: 30px 20px 20px 20px;
 	background-image: url(http://assets.uxbooth.com/uploads/2012/07/fightclub.jpg);
 	background-size: 100%;
 	font-family: 'Abril Fatface', cursive;
 	font-size: 24pt;
-	font-color: white;
-	padding-top: 0.5em;
+	align-content: center;
 }
 
-.btn.btn-primary.btn-lg.btn-block.movie-quiz:hover {
+
+.btn.btn-primary.btn-lg.btn-block.quiz:hover {
 	background-color: white;
 	background-image: none;
 	color: #67D9F0;
+	text-decoration: none;
 }
 
-.btn.btn-primary.btn-lg.btn-block.tv-quiz {
+/*.btn.btn-primary.btn-lg.btn-block.tv-quiz {
 	border: none;
 	width: 400px;
 	height: 100px;
@@ -90,17 +111,20 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 	background-color: white;
 	background-image: none;
 	color: #70E5AB;
-}
+	text-decoration: none;
+}*/
 
 .footer {
 	font-family: "PT Sans", Narrow;
-	text-align: center;
 	color: white;
 	font-size: 10pt;
 	padding-top: 2.5em;
 	padding-bottom: -2em;
+	position: static;
+	float: center;
 	
 }
+
 
 /* ------------------------*/ /* ---------->>> START QUIZ <<<-----------*/ /* ------------------------*/
 
@@ -132,6 +156,7 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 	width: 200px;
 	height: 70px;
 	text-align: center;
+	padding: 15px 20px 20px 20px;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Abril Fatface', cursive;
@@ -145,6 +170,7 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 .btn.btn-primary.btn-lg.btn-block.startbutton:hover {
 	background-color: white;
 	color: #70E5AB;
+	text-decoration: none;
 }
 
 
@@ -235,6 +261,10 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 	text-decoration: none;
 	background-color: white;
 	padding: 0.1em;
+}
+
+.container-fluid.alternatives-answers {
+	background: none;
 }
 
 .alternativanswers {
