@@ -24,16 +24,17 @@
 <div class="container homepageheading">
  <h1 class="homepageheading">How well do you know your spoilers?</h1>
 	</div>
-{% for quiz in quizzes %}
-<div class="pickmovie">
- <button type="button" 
- 	class="btn btn-primary btn-lg btn-block movie-quiz"><p 
- 	class="movie-button-text"><a href="{% url "quiz_page" quiz.quiz_number %}">{{ quiz.name }}</a></p></button></div>
-{% endfor %}
 
+<div class="container-fluid alternatives-quizzes">
+	<div class="col-md-6 center block">
+		{% for quiz in quizzes %}
+		<div class="row quizzes">
+		 <a href="{% url "quiz_page" quiz.quiz_number %}" class="btn btn-primary btn-lg btn-block quiz">{{ quiz.name }}</a></button>
+{% endfor %}
+</div>
 <footer class="footer">
 <hr width="20%">
-  <p>Siri Matsdotter Berggren - #100TjejerKodar - 2016</p>
+ Siri Matsdotter Berggren - #100TjejerKodar - 2016
 </footer>
 
  </body>
