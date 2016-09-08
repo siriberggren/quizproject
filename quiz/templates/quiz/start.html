@@ -26,9 +26,8 @@
 	</div>
 
 <div class="container-fluid alternatives-quizzes">
-	<div class="col-md-6 center block">
+	<div class="col-md-12 center block">
 		{% for quiz in quizzes %}
-		<div class="row quizzes">
 		 <a href="{% url "quiz_page" quiz.quiz_number %}" class="btn btn-primary btn-lg btn-block quiz">{{ quiz.name }}</a></button>
 {% endfor %}
 </div>
