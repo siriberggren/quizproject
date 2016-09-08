@@ -31,7 +31,7 @@ Question {{ question_number }}
 <div class="container-fluid alternatives-answers">
   <div class="row answers">
   		<div class="col-md-2 center block">
-		   <button type="button" class="btn btn-primary btn-lg btn-block answer"><a href='{% url "results_page" quiz_number %}'>{{ answer1 }}</a></button>
+		   <a href='{% url "results_page" quiz_number %}' class="btn btn-primary btn-lg btn-block answer">{{ answer1 }}</a>
  			<button type="button" class="btn btn-primary btn-lg btn-block answer">{{ answer2 }}</button>
  			<button type="button" class="btn btn-primary btn-lg btn-block answer">{{ answer3 }}</button>
  			<button type="button" class="btn btn-primary btn-lg btn-block answer">The Sixt Sense</button>
