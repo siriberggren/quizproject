@@ -8,6 +8,7 @@ body {
     background-attachment: fixed;
     text-align: center;
     float: center;
+    color: white;
 }
 
 .gradient {
@@ -119,7 +120,7 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 
 
 .sirilink {
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'PT Sans Narrow', sans-serif;
 	text-align: center;
 	color: white;
 	font-size: 10pt;
@@ -135,7 +136,7 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 }
 
 .tklink {
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'PT Sans Narrow', sans-serif;
 	text-align: center;
 	color: white;
 	font-size: 10pt;
