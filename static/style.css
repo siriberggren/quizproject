@@ -114,10 +114,8 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 	text-decoration: none;
 }*/
 
-.footer {
-	font-family: "PT Sans", Narrow;
+.containter-fluid.footer {
 	color: white;
-	font-size: 10pt;
 	padding-top: 2.5em;
 	padding-bottom: -2em;
 	position: static;
@@ -125,6 +123,25 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 	
 }
 
+.sirilink {
+	font-family: 'Abril Fatface', cursive;
+	text-align: center;
+	color: white;
+	padding-bottom: 1em;
+	padding-left: 0.2em;
+	font-size: 10pt;
+	border-bottom: 1px solid white;
+	text-align: center;
+	padding-bottom: 1px;
+	display: inline;
+}
+
+.sirilink:hover {
+	color: #67D9F0;
+	text-decoration: none;
+	background-color: white;
+	padding: 0.1em;
+}
 
 /* ------------------------*/ /* ---------->>> START QUIZ <<<-----------*/ /* ------------------------*/
 
@@ -305,19 +322,17 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 	font-size: 26pt;
 }
 
-.share-btn {
+.container-fluid.share-buttons {
   	display: inline;
   	align-content: center;
+  	color: black;
   	font-size: 38pt;
 	color: white;
-	margin: 0em 0.3em 0em 0.3em;
 }
 
 .fa.fa-facebook-square {
 	font-size: 38pt;
 	color: white;
-	margin: 0em 0.3em 0em 0.3em;
-	position: absolute;
 }
 
 .fa.fa-facebook-square:hover {
@@ -328,8 +343,6 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 .fa.fa-twitter-square {
 	font-size: 38pt;
 	color: white;
-	margin: 0em 0.3em 0em 0.3em;
-	position: absolute;
 }
 
 .fa.fa-twitter-square:hover {
@@ -340,8 +353,6 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 .fa.fa-envelope-square {
 	font-size: 38pt;
 	color: white;
-	margin: 0em 0.3em 0em 0.3em;
-	position: absolute;
 }
 
 .fa.fa-envelope-square:hover {

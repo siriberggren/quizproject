@@ -17,13 +17,20 @@
 	</div>
 <h1 class="results-header">Your Results:</h1>
 <h1 class="score"> {{ correct }} / {{ total }} </h1>
-<h1 class="feedback">Great job! <br> Share your score</h1>
+<p class="feedback">Great job!</p>
+<br>
+<p class="feedback">Share your score</p>
 
-<ul class="share-buttons">
-  <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" class="share-btn facebook"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a></li>
-  <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" class="share-btn twitter"="Tweet"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i><span class="sr-only">Tweet</span></a></li>
-  <li><a href="mailto:?subject=&body=:%20" target="_blank" class="Share-btn mail"><i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i><span class="sr-only">Send email</span></a></li>
-</ul>
-<p><a href="{% url "start_page" %}" class="skip2">Give it another shot/a></p>
+<div class="container-fluid share-buttons">
+  	<a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" class="share-btn facebook">
+  		<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+  <a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" class="share-btn twitter"="Tweet">
+  		<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+  <a href="mailto:?subject=&body=:%20" target="_blank" class="Share-btn mail">
+  		<i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i></a>
+</div>
+<p><a href="{% url "start_page" %}" class="skip2">Give it another shot</a></p>
+<br>
+<br>
  </body>
 </html>
