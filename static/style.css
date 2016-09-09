@@ -273,10 +273,12 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 	font-family: 'Abril Fatface', cursive;
 	text-align: center;
 	color: white;
+	background-color: none;
 	font-size: 12pt;
 	border-bottom: 2px solid white;
 	text-align: center;
 	padding-bottom: 1px;
+	padding-top: 0px;
 	display: inline;
 }
 
@@ -330,11 +332,14 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 	margin-bottom: -20px;
 }
 
+.feedback {
+	font-size: 20pt;
+}
+
 .container-fluid.share-buttons {
   	align-content: center;
-  	font-size: 38pt;
 	color: white;
-	margin-top: 0.5em;
+	margin-top: 3em;
 	margin-bottom: 0.5em;
 }
 
@@ -366,5 +371,9 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
 .fa.fa-envelope-square:hover {
 	color: #67D9F0;
 	background-color: none;
+}
+
+.fa.fa-arrow-down {
+	font-size: 20pt;
 }
 
