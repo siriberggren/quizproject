@@ -21,7 +21,7 @@ def question(request, quiz_number, question_number):
     question = questions[int(question_number) - 1]
     islastpage = False,
     num_questions = quiz.questions.count()
-    if num_questions == question_number:
+    if question_number == num_questions:
         islastpage = True
     context = {
         "question_number": question_number,

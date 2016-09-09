@@ -249,6 +249,7 @@ background-image: linear-gradient(to bottom, #67D9F0 0%, #70E5AB 100%);
    	line-height: 0;
    	clear: both;
    	padding-top: 0.5em
+   	color: black;
 }
 
 .questionnumber {
