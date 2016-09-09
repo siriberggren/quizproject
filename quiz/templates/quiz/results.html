@@ -15,11 +15,11 @@
   <div class="container header">
  <h1 class="logo smaller">Spoiler Alert!</h1>
 	</div>
-<h1 class="results-header">Your Results:</h1>
+<h1 class="results-header">Wow! You got</h1>
 <h1 class="score"> {{ correct }} / {{ total }} </h1>
 <p class="feedback">Great job!</p>
 <br>
-<p class="feedback">Share your score</p>
+<p class="feedback share">Share your score</p>
 
 <div class="container-fluid share-buttons">
   	<a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" class="share-btn facebook">
@@ -28,6 +28,7 @@
   		<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
   <a href="mailto:?subject=&body=:%20" target="_blank" class="Share-btn mail">
   		<i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i></a>
+<i class="fa fa-arrow-down fa-xs" aria-hidden="true"></i>
 </div>
 <a href="{% url "start_page" %}" class="skip2">Give it another shot!</a>
 
