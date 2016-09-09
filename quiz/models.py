@@ -4,6 +4,8 @@ class Quiz(models.Model):
 	quiz_number = models.PositiveIntegerField()
 	name = models.CharField(max_length=100)
 	description = models.TextField()
+		def __str__(self):
+			return self.name
 
 class Question(models.Model):
 	question = models.TextField()
@@ -12,3 +14,4 @@ class Question(models.Model):
 	answer3 = models.CharField(max_length=100)
 	correct = models.PositiveIntegerField()
 	quiz = models.ForeignKey(Quiz, related_name="questions")
+
