@@ -13,6 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+from django.contrib import admin
+from django.conf.urls import include
 from django.conf.urls import url
 from quiz import views
 urlpatterns = [
@@ -20,4 +22,5 @@ urlpatterns = [
 	url(r"^quiz/([0-9]+)/$", views.quiz, name="quiz_page"),
 	url(r"^quiz/([0-9]+)/question/([0-9]+)/$", views.question, name="question_page"),
 	url(r"^quiz/([0-9]+)/results/$", views.results, name="results_page"),
-	]
+	url(r'^admin/', include(admin.site.urls)),
+    ]
