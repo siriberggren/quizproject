@@ -26,24 +26,26 @@ Question {{ question_number }}
 
 <h1 class="moviequestion" class="animated infinite fadeIn">{{ question }}</h1>
 
-<p class="skip1">Don't want to spoil it?  <a href='{% url "results_page" quiz_number %}' class="skip2">Skip to the next question.</a></p>
+<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+       {% csrf_token %}
+{% if not islastpage  %}
+<p class="skip1">Don't want to spoil it?  <a href="{% url "question_page" quiz.quiz_number question_number|add:"1" %}" class="skip2" input type="link" name="answer" value="1">Skip to the next question.</a></p>
+{% endif %}
 </div>
 <div class="container-fluid alternatives-answers">
   <div class="row answers">
   		<div class="col-md-2 center block">
 
-      <form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
-		   {% csrf_token %}
 
-       <button class="btn btn-primary btn-lg btn-block answer" input type="btn" name="answer" value="1">{{ answer1 }}</button>
+       <button class="btn btn-primary btn-lg btn-block answer" input type="btn" name="answer" value="2">{{ answer1 }}</button>
 
-       <button class="btn btn-primary btn-lg btn-block answer" input type="btn" name="answer" value="2">{{ answer2 }}</button>
-
-       <button class="btn btn-primary btn-lg btn-block answer" input type="btn" name="answer" value="3">{{ answer3 }}</button>
-
-       <button class="btn btn-primary btn-lg btn-block answer" input type="btn" name="answer" value="4">{{ answer4 }}</button>
+       <button class="btn btn-primary btn-lg btn-block answer" input type="btn" name="answer" value="3">{{ answer2 }}</button>
 
        </form>
+
+       <button class="btn btn-primary btn-lg btn-block answer">0</button>
+
+        <button type="button" class="btn btn-primary btn-lg btn-block answer">Fight Club</button>
         <button type="button" class="btn btn-primary btn-lg btn-block answer">Fight Club</button>
        
         </div>
