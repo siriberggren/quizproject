@@ -1,17 +1,5 @@
 from django.shortcuts import render
 
-quizzes = [
-	{
-		"quiz_number": 1,
-   		"name": "Klassiska böcker",
-	   	"description": "Hur bra kan du dina klassiker?"
-	},
-	{
-		"quiz_number": 2,
-   	   	"name": "Största 1slagen",
-	   	"description": "Kan du dina lag?"
-	},
-]
 
 def start(request):
 	context = {
@@ -40,7 +28,7 @@ def question(request, quiz_number, question_number):
 
 def results(request, quiz_number):
 	context = {
-	    "correct": 12,
+	    "correct": 1,
 	    "total": 20,
 		"quiz_number": quiz_number,
 	}
