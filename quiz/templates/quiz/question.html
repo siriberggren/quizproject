@@ -34,21 +34,18 @@ Question {{ question_number }}
 
       <form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 		   {% csrf_token %}
-       <a href='{% url "results_page" quiz_number %}' class="btn btn-primary btn-lg btn-block answer"input type="btn" name="answer" value="1">{{ answer1 }}</a>
-       </form>
 
-       <form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
-       {% csrf_token %}
-       <a href='{% url "results_page" quiz_number %}' class="btn btn-primary btn-lg btn-block answer"input type="btn" name="answer" value="2">{{ answer2 }}</a>
-       </form>
+       <button class="btn btn-primary btn-lg btn-block answer" input type="btn" name="answer" value="1">{{ answer1 }}</button>
 
-       <form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
-       {% csrf_token %}
-       <a href='{% url "results_page" quiz_number %}' class="btn btn-primary btn-lg btn-block answer"input type="btn" name="answer" value="3">{{ answer3 }}</a>
+       <button class="btn btn-primary btn-lg btn-block answer" input type="btn" name="answer" value="2">{{ answer2 }}</button>
+
+       <button class="btn btn-primary btn-lg btn-block answer" input type="btn" name="answer" value="3">{{ answer3 }}</button>
+
+       <button class="btn btn-primary btn-lg btn-block answer" input type="btn" name="answer" value="4">{{ answer4 }}</button>
+
        </form>
+        <button type="button" class="btn btn-primary btn-lg btn-block answer">Fight Club</button>
        
- 			<button type="button" class="btn btn-primary btn-lg btn-block answer">The Sixt Sense</button>
- 			<button type="button" class="btn btn-primary btn-lg btn-block answer">The Departed</button>
         </div>
         <div class="col-md-2 center block">
     		<button type="button" class="btn btn-primary btn-lg btn-block answer">Fight Club</button>
@@ -87,6 +84,7 @@ Question {{ question_number }}
  			<button type="button" class="btn btn-primary btn-lg btn-block answer">The Green Mile</button>
   </div>
 </div>
+
 
 <footer class="footer navbar-fixed-bottom">
 <div class="container">
