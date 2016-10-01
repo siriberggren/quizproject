@@ -26,11 +26,14 @@ Question {{ question_number }}
 
 <h1 class="moviequestion" class="animated infinite fadeIn">{{ question }}</h1>
 
-<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
-       {% csrf_token %}
-{% if not islastpage  %}
+{% if islastpage %}
+
+{% else %}
 <p class="skip1">Don't want to spoil it?  <a href="{% url "question_page" quiz.quiz_number question_number|add:"1" %}" class="skip2" input type="link" name="answer" value="1">Skip to the next question.</a></p>
 {% endif %}
+
+<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+       {% csrf_token %}
 </div>
 <div class="container-fluid alternatives-answers">
   <div class="row answers">

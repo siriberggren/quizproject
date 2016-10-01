@@ -21,7 +21,7 @@ def question(request, quiz_number, question_number):
     question = questions[int(question_number) - 1]
     islastpage = False,
     num_questions = quiz.questions.count()
-    if question_number == num_questions:
+    if int(question_number) == num_questions:
         islastpage = True
     context = {
         "question_number": question_number,
@@ -49,6 +49,7 @@ def question(request, quiz_number, question_number):
         "islastpage": islastpage,
         "quiz": quiz,
         "quiz_number": quiz_number,
+        "islastpage": islastpage,
     }
     return render(request, "quiz/question.html", context)
 
